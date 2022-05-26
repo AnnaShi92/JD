@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <div class="box">
+        <span></span>
+        <p>1</p>
+        <p style="visibility: hidden">2</p>
+        <p class="three">3</p>
+        <p style="display: none;">4</p>
+        <p style="opacity: 0;">5</p>
+    </div>
+
+    <input type="hidden">
+
+
+    <script>
+        // $('.box>p:not(.three)').css('color', 'red');
+        // $('.box>p:first-child').css('color', 'red');
+        // $('.box>p:first-of-type').css('color', 'green');
+
+        console.log($(':hidden'));
+        console.log($(':hidden')[6].innerHTML);
+        console.log($(':visible'));
+    </script>
+</body>
+
+</html>

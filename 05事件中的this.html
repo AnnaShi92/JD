@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <style>
+        .color {
+            color: red;
+        }
+
+        .list {
+            display: none;
+        }
+
+        .open+.list {
+            display: block;
+        }
+
+        span {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url("./images/20130603A.png");
+            background-position: -20px 0;
+        }
+        .bg{
+            background-position: -37px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <span></span>
+            <div class="list">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <div class="list">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <div class="list">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <div class="list">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <div class="list">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <div class="list">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <div class="list">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <div class="list">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <div class="list">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+            </div>
+        </li>
+    </ul>
+
+    <script>
+        $('span').click(function () {
+            // console.log(this);
+            // console.log($(this));
+            // console.log($(this).html());
+            // $(this).toggleClass('color')
+
+            $(this).toggleClass('open bg');
+        })
+    </script>
+</body>
+
+</html>

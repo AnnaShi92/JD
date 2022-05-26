@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <style>
+        .box,
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .box2 {
+            border-radius: 50%;
+        }
+
+        .box3 {
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <div class="box">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+    </div> -->
+
+    <!--  <form action="" method="get">
+        <p>
+            <input type="text">
+        </p>
+        <p>
+            <input type="text">
+        </p>
+        <p>
+            <input type="button" id="btn" value="点击">
+        </p>
+    </form> -->
+
+    <div class="box" title="div提示" my="我是自定义属性" style="border-radius: 50%;">盒子</div>
+    <input type="checkbox" checked>
+    <input type="radio">
+
+    <div class="box1">操作clss属性</div>
+    <button id="add">添加</button>
+    <button id="remove">删除</button>
+    <button id="toggle">切换</button>
+
+
+
+
+    <script>
+        $('#add').click(function(){
+            $('.box1').addClass('box2 box3')
+        })
+        $('#remove').click(function(){
+            $('.box1').removeClass('box2')
+        })
+        $('#toggle').click(function(){
+            $('.box1').toggleClass('box2')
+        })
+        // console.log($('p').html());
+        // console.log($('p').text());
+
+        // $('p').html($('p').html()+'<span style="color:red;">我来自JQ</span>')
+        // $('p').text($('p').text()+'<span style="color:red;">我来自JQ</span>')
+
+        // console.log($('.box').html());
+        // $('.box').html($('.box').html() + '<p>我来自JQ</p>');
+
+        /*  $('#btn').click(function () {
+             // console.log($('input').val());
+             $('input').val('嗯哼')
+         }) */
+
+
+        /* console.log($('.box').prop('class'));
+        console.log($('.box').prop('title'));
+        console.log($('.box').prop('my'));
+        console.log($('[type=checkbox]').prop('checked')); //true
+        console.log($('[type=radio]').prop('checked')); //false
+
+        $('.box').prop('title', '哈哈');
+        $('.box').prop({
+            id: 'box',
+            title: '鼠标'
+        })
+
+        $('[type=checkbox]').prop('checked', false);
+
+        //删除属性
+        $('.box').removeProp('title')
+        $('.box').removeProp('id')
+        $('.box').removeProp('my') */
+
+
+
+        /* console.log($('.box').attr('class'));
+        console.log($('.box').attr('title'));
+        console.log($('.box').attr('my'));
+        console.log($('[type=checkbox]').attr('checked')); //true
+        console.log($('[type=radio]').attr('checked')); //false
+
+        $('.box').attr('title','哈哈');
+        $('.box').attr({
+            style:'color:pink',
+            title:'鼠标'
+        })
+
+        $('[type=checkbox]').attr('checked',false); */
+
+        // $('.box').removeAttr('title id my')
+        // $('.box').removeAttr('id')
+        // $('.box').removeAttr('my')
+    </script>
+</body>
+
+</html>
